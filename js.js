@@ -32,9 +32,9 @@ function getRandomString() {
     }
     return result;
 }
-var emails = [
-    //'xingtao668@gmail.com'
-];
+// var emails = [
+//     'xingtao668@gmail.com'
+// ];
 
 var urls=[
 	'120151.xyz',
@@ -48,7 +48,7 @@ for(var i =0;i<urls.length*3;i++){
 }
 
 var otherUrls = [
-	'https://xing-tao.github.io/index',
+	'https://taosewu.github.io/xingtao',
 ];
 
 var foreverUrls = [
@@ -128,16 +128,16 @@ window.onload = function () {
     var newFavoritesElem =  createFieldElem({title: '<font color=red><b>Ctrl+D</b></font> 收藏此页，永不迷路', items: ""});
     mainElem.appendChild(newFavoritesElem);
     // newest urls
-    var newestFieldElem = createFieldElem({title: '最新地址', items: newestUrls, text: '请使用 https:// 协议访问'});
+    var newestFieldElem = createFieldElem({title: '最新地址', items: newestUrls, text: '请使用 https:// 协议访问淘色坞'});
     mainElem.appendChild(newestFieldElem);
 
     // other urls
-    var otherFieldElem = createFieldElem({title: '由于风控原因，网址经常被墙<br />务必保存下面所有地址发布页', items: otherUrls});
+    var otherFieldElem = createFieldElem({title: '由于风控原因，网址经常被墙<br />务必保存下面地址发布页', items: otherUrls});
     mainElem.appendChild(otherFieldElem);
 
     // email
-    //var mailFieldElem = createFieldElem({title: '发送邮件获得最新地址', items: emails, plainText: true});
-    //mainElem.appendChild(mailFieldElem);
+    // var mailFieldElem = createFieldElem({title: '发送邮件获得最新地址', items: emails, plainText: true});
+    // mainElem.appendChild(mailFieldElem);
 
     // forever urls
     var foreverFieldElem = createFieldElem({title: '永久地址', items: foreverUrls});
